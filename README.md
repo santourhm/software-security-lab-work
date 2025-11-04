@@ -53,13 +53,11 @@ Each exercise includes:
 ### Vulnerability
 The binary `Exercise1_Classical_BoF/bin/bof` calls `strcpy` to copy a user-supplied argument into a 256-byte local buffer without bounds checks:
 
-```c
-/* Decompiled vulnerable function (illustrative) */
 void vuln(char *input) {
     char buffer[256];
-    strcpy(buffer, input); /* unsafe: no length checks */
+    strcpy(buffer, input); unsafe: no length checks 
     printf("Something will happens ! %s\n", buffer);
-}```
+}
 # Binary Exploitation Lab — README
 
 **Repository:** solutions and analyses for a university lab on binary exploitation (M2 CyberSecurity, Ensimag).  
