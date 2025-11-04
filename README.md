@@ -59,7 +59,7 @@ void vuln(char *input) {
     char buffer[256];
     strcpy(buffer, input); /* unsafe: no length checks */
     printf("Something will happens ! %s\n", buffer);
-}
+}```
 # Binary Exploitation Lab — README
 
 **Repository:** solutions and analyses for a university lab on binary exploitation (M2 CyberSecurity, Ensimag).  
